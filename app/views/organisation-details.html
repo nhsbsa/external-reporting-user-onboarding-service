@@ -1,7 +1,7 @@
 {% extends 'layout.html' %}
 
 {% block pageTitle %}
-  ePACT2 registration
+  Authorisation | External Reporting User Onboarding
 {% endblock %}
 
 {% block beforeContent %}
@@ -42,17 +42,24 @@
       </div>
 
       <div class="nhsuk-form-group">
-        <label class="nhsuk-label" for="gp-authoriser">
-          Name of GP Authoriser
+        <label class="nhsuk-label" for="authoriser-name">
+          Name of Authoriser
         </label>
-        <input class="nhsuk-input" id="gp-authoriser" name="gp-authoriser" type="text">
+        <input class="nhsuk-input" id="authoriser-name" name="authoriser-name" type="text">
       </div>
 
       <div class="nhsuk-form-group">
-        <label class="nhsuk-label" for="gp-authoriser-email">
-          GP Authoriser Company Email
+        <label class="nhsuk-label" for="authoriser-email">
+          Authoriser Company Email
         </label>
-        <input class="nhsuk-input" id="gp-authoriser-email" name="gp-authoriser-email" type="text">
+        <input class="nhsuk-input" id="authoriser-email" name="authoriser-email" type="text">
+      </div>
+
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="authoriser-role">
+          Authoriser Role
+        </label>
+        <input class="nhsuk-input" id="gp-authoriser-role" name="authoriser-role" type="text">
       </div>
     
       </fieldset>
