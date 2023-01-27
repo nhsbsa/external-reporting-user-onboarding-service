@@ -12,7 +12,7 @@ router.post('/subjectArea/', function (req, res) {
 
   // checking the value of the variable (incomeSingle) and directing to pages based on that value
   if (incomeSingle === 'gp-practice') {
-    res.redirect('PAGE-1')
+    res.redirect('your-details-eden')
   } else if (incomeSingle === 'primary-care-network') {
     res.redirect('PAGE-2')
   } else if (incomeSingle === 'trust-other'){

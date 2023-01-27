@@ -1,0 +1,118 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Organisation Type | External Reporting User Onboarding
+{% endblock %}
+
+{% block beforeContent %}
+
+{% endblock %}
+
+{% block content %}
+{% from 'back-link/macro.njk' import backLink %}
+
+<div class="nhsuk-back-link">
+    <a class="nhsuk-back-link__link nhsuk-u-margin-bottom-8" href="/your-details-eden">
+      <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+        <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+      </svg>
+      Go back</a>
+  </div> 
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      
+<header class="page-header">
+        <p class="page-header--sub heading-secondary">Register to use External Reporting Systems</p>
+        <h1>Your type of organisation</h1>
+      </header>
+
+      <form class="form" action="orgType" method="GET"> <!-- wrapped both questions inside <form> -->
+
+        <fieldset class="nhsuk-fieldset">
+          <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+            <h2 class="nhsuk-heading-l">
+            Please select one
+            </h2>
+        </legend>
+      
+        <div class="nhsuk-form-group">
+      
+          <div class="nhsuk-radios">
+            <div class="nhsuk-radios__item">
+              <input class="nhsuk-radios__input" id="checkBoxOne" name="incomesingle" value="gp-practice" type="radio" aria-controls="medicineusereviews" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-radios__label" for="checkBoxOne">
+                GP Practice
+              </label>
+            </div>
+            <div class="nhsuk-radios__item">
+              <input class="nhsuk-radios__input" id="checkBoxTwo" name="incomesingle" value="primary-care-network" type="radio" aria-controls="applianceusereviews" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-radios__label" for="checkBoxTwo">
+                Primary Care Network (PCN)
+              </label>
+            </div>
+            <div class="nhsuk-radios__item">
+              <input class="nhsuk-radios__input" id="checkBoxThree" name="incomesingle" value="trust-other" type="radio" aria-controls="applianceusereviews" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-radios__label" for="example-hints-3">
+                NHS commissioner or provider
+              </label>
+              <span class="nhsuk-hint nhsuk-radios__hint" id="example-hints-2-item-hint">
+              </p> Choose this option if you are:
+              <ul>
+              <li>a Clinical Commissioning Group (CCG)</li>              
+              <li>a hospital trust</li>
+              <li>an Independent Sector Healthcare Provider (ISHPs)</li>
+              <li>a local authority</li>
+             </ul> </span>
+            </div>
+            <div class="nhsuk-radios__item">
+              <input class="nhsuk-radios__input" id="checkBoxFour" name="incomesingle" value="local-team" type="radio" aria-controls="applianceusereviews" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-radios__label" for="checkBoxFour">
+                NHS local teams
+              </label>
+            </div>
+            <div class="nhsuk-radios__item">
+              <input class="nhsuk-radios__input" id="checkBoxFour" name="incomesingle" value="commissioning-support-unit" type="radio" aria-controls="applianceusereviews" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-radios__label" for="checkBoxFour">
+                Commissioning Support Units (CSUs)
+              </label>
+            </div>
+            <div class="nhsuk-radios__item">
+              <input class="nhsuk-radios__input" id="checkBoxFive" name="incomesingle" value="national-orgs" type="radio" aria-controls="applianceusereviews" aria-expanded="false">
+              <label class="nhsuk-label nhsuk-radios__label" for="checkBoxFive">
+                National Level organisation (DHSC, NHSE&I)
+              </label>
+            </div>
+          </div>
+        </div>
+      
+        <nav class="nhsuk-pagination" role="navigation" aria-label="Pagination">
+            <ul class="nhsuk-list nhsuk-pagination__list">
+              <li class="nhsuk-pagination-item--previous">
+                <a class="nhsuk-pagination__link nhsuk-pagination__link--prev" href="/your-details-eden">
+                  <span class="nhsuk-pagination__title">Previous</span>
+                  <span class="nhsuk-u-visually-hidden">:</span>
+                  <span class="nhsuk-pagination__page">Your Details</span>
+                  <svg class="nhsuk-icon nhsuk-icon__arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                    <path d="M4.1 12.3l2.7 3c.2.2.5.2.7 0 .1-.1.1-.2.1-.3v-2h11c.6 0 1-.4 1-1s-.4-1-1-1h-11V9c0-.2-.1-.4-.3-.5h-.2c-.1 0-.3.1-.4.2l-2.7 3c0 .2 0 .4.1.6z"></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="nhsuk-pagination-item--next">
+                <a class="nhsuk-pagination__link nhsuk-pagination__link--next" href="/organisation-details-eden">
+                  <span class="nhsuk-pagination__title">Next</span>
+                  <span class="nhsuk-u-visually-hidden">:</span>
+                  <span class="nhsuk-pagination__page">Organisation Details</span>
+                  <svg class="nhsuk-icon nhsuk-icon__arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                    <path d="M19.6 11.66l-2.73-3A.51.51 0 0 0 16 9v2H5a1 1 0 0 0 0 2h11v2a.5.5 0 0 0 .32.46.39.39 0 0 0 .18 0 .52.52 0 0 0 .37-.16l2.73-3a.5.5 0 0 0 0-.64z"></path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+    
+        </div>
+    
+      </div>
+      {% endblock %}
