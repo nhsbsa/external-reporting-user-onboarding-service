@@ -69,7 +69,7 @@ router.post('/epactOrgtype/', function (req, res) {
     res.redirect('epact2-organisation-details')
   } else if (incomeSingle === 'pcn'){
     res.redirect('epact2-organisation-details')
-  } else if (incomeSingle === 'stip'){
+  } else if (incomeSingle === 'stp'){
     res.redirect('epact2-organisation-details')
   
   } else {
