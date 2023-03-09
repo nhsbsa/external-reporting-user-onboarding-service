@@ -1,0 +1,72 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Success | External Reporting User Onboarding
+{% endblock %}
+
+{% block beforeContent %}
+
+{% endblock %}
+
+{% block content %}
+{% from 'back-link/macro.njk' import backLink %}
+
+<div class="nhsuk-back-link">
+    <a class="nhsuk-back-link__link nhsuk-u-margin-bottom-8" href="#" onclick="history.back()">
+      <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+        <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+      </svg>
+      Go back</a>
+  </div>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+    
+            <div class="nhsuk-panel nhsuk-u-margin-bottom-5" style="background: #005EB8; margin-top: 5;">
+    
+                <h1 class="nhsuk-panel__title nhsuk-u-padding-top-8" style="color: white;">
+                    <center>Success</center>
+                
+                <span class="nhsuk-caption-xl nhsuk-u-padding-bottom-8" style="text-align: center; color: white;">Your request has been submitted for approval</span>
+                
+                </h1>
+            </div>
+    
+                    
+            <h2 class="nhsuk-heading-m">What happens next?</h2>
+    
+            
+    
+            
+    
+    
+            <p>Once we get confirmation from your authoriser, we'll send you an email with your access details.</p>
+    
+            <p>If you have any questions about the registration process, contact us.</p>
+    
+            <p><span class="nhsuk-u-font-weight-bold">Telephone:</span> 0191 203 5050<br>
+               <span class="nhsuk-u-font-weight-bold">Email:</span> <a href="nhsbsa.registration@nhs.net">nhsbsa.registration@nhs.net</a></p>
+    
+               <p>We're open Monday to Friday 8am to 5pm.</p>
+
+               <p>
+                If you need to request data that is not readily available or if you are authorised to request patient NHS numbers, email: <a href="datarequest@nhsbsa.nhs.uk">datarequest@nhsbsa.nhs.uk</a>
+            </p>
+    
+                  <p>
+    
+            <a href="/index" class="nhsuk-button">
+                Start a new application
+            </a>
+    
+    
+    
+    
+    
+    
+    
+    
+        </div> 
+             {% endblock %}
+    </body>
+    </html>

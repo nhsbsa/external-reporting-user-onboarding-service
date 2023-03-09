@@ -1,0 +1,157 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Organisation Type | External Reporting User Onboarding
+{% endblock %}
+
+{% block beforeContent %}
+
+{% endblock %}
+
+{% block content %}
+{% from 'back-link/macro.njk' import backLink %}
+
+<div class="nhsuk-back-link">
+    <a class="nhsuk-back-link__link nhsuk-u-margin-bottom-8" href="/your-details-epact2">
+      <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+        <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+      </svg>
+      Go back</a>
+  </div> 
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      
+<header class="page-header">
+        <p class="page-header--sub heading-secondary">Register to use ePact2</p>
+        <h1>Select your organisation type</h1>
+      </header>
+
+        <fieldset class="nhsuk-fieldset">
+          <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+        </legend>
+      
+        <form class="form" action="epactOrgtype" method="POST">
+
+            <div class="nhsuk-form-group">
+  
+              <label class="nhsuk-label" for="select-1">
+                Available organisation types:
+              </label>
+              </div>
+
+              <div class="nhsuk-radios">
+                <div class="nhsuk-radios__item">
+                  <input class="nhsuk-radios__input" id="checkBoxOne" name="incomesingle"
+                  value="ahsn" 
+                    type="radio" aria-controls="medicineusereviews" aria-expanded="false">
+                  <label class="nhsuk-label nhsuk-radios__label" for="checkBoxOne">
+                    Academic Health Science Network (AHSN)
+                  </label>
+                </div>
+                
+                <div class="nhsuk-radios__item">
+                  <input class="nhsuk-radios__input" id="checkBoxTwo" name="incomesingle"
+                  value="ccg"
+                    type="radio" aria-controls="applianceusereviews" aria-expanded="false">
+                  <label class="nhsuk-label nhsuk-radios__label" for="checkBoxTwo">
+                    Clinical Commissioning Group (CCG)
+                  </label>
+                </div>
+                
+                <div class="nhsuk-radios__item">
+                  <input class="nhsuk-radios__input" id="checkBoxThree" name="incomesingle"
+                  value="csu"
+                    type="radio" aria-controls="applianceusereviews" aria-expanded="false">
+                  <label class="nhsuk-label nhsuk-radios__label" for="example-hints-3">
+                    Commissioning Support Unit (CSU)
+                  </label>
+                </div>
+
+                <div class="nhsuk-radios__item">
+                  <input class="nhsuk-radios__input" id="checkBoxThree" name="incomesingle" 
+                  value="gpp"
+                    type="radio" aria-controls="applianceusereviews" aria-expanded="false">
+                  <label class="nhsuk-label nhsuk-radios__label" for="example-hints-3">
+                    GP Practice
+                  </label>
+                </div>
+              
+                <div class="nhsuk-radios">
+                  <div class="nhsuk-radios__item">
+                    <input class="nhsuk-radios__input" id="checkBoxOne" name="incomesingle" 
+                    value="ht" 
+                      type="radio" aria-controls="medicineusereviews" aria-expanded="false">
+                    <label class="nhsuk-label nhsuk-radios__label" for="checkBoxOne">
+                      Hospital Trust
+                    </label>
+                  </div>
+
+                  <div class="nhsuk-radios__item">
+                    <input class="nhsuk-radios__input" id="checkBoxTwo" name="incomesingle" 
+                    value="ishp"
+                      type="radio" aria-controls="applianceusereviews" aria-expanded="false">
+                    <label class="nhsuk-label nhsuk-radios__label" for="checkBoxTwo">
+                      Independent Sector Healthcare Provider (ISHP)
+                    </label>
+                  </div>
+
+                  <div class="nhsuk-radios__item">
+                    <input class="nhsuk-radios__input" id="checkBoxThree" name="incomesingle" 
+                    value="la"
+                      type="radio" aria-controls="applianceusereviews" aria-expanded="false">
+                    <label class="nhsuk-label nhsuk-radios__label" for="example-hints-3">
+                      Local Authority
+                    </label>
+                  </div>
+
+                  <div class="nhsuk-radios__item">
+                    <input class="nhsuk-radios__input" id="checkBoxThree" name="incomesingle" 
+                    value="nlo"
+                      type="radio" aria-controls="applianceusereviews" aria-expanded="false">
+                    <label class="nhsuk-label nhsuk-radios__label" for="example-hints-3">
+                      National Level Organisation (NLO)
+                    </label>
+                  </div>
+
+                  <div class="nhsuk-radios">
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" id="checkBoxOne" name="incomesingle" 
+                      value="pcm" 
+                        type="radio" aria-controls="medicineusereviews" aria-expanded="false">
+                      <label class="nhsuk-label nhsuk-radios__label" for="checkBoxOne">
+                        Pharmacy Contract Manager (PCM)
+                      </label>
+                    </div>
+
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" id="checkBoxTwo" name="incomesingle" 
+                      value="pcn"
+                        type="radio" aria-controls="applianceusereviews" aria-expanded="false">
+                      <label class="nhsuk-label nhsuk-radios__label" for="checkBoxTwo">
+                        Primary Care Network (PCN)
+                      </label>
+                    </div>
+
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" id="checkBoxThree" name="incomesingle" 
+                      value="stp"
+                        type="radio" aria-controls="applianceusereviews" aria-expanded="false">
+                      <label class="nhsuk-label nhsuk-radios__label" for="example-hints-3">
+                        Sustainability and Transformation Partnership (STP)
+                      </label>
+                    </div>            
+              </div>
+            </div>
+  
+          </fieldset>
+          <button class="nhsuk-button nhsuk-u-margin-top-8" type="submit">
+            Submit
+          </button>
+      
+                  </form>
+          </div>
+    
+      </div>
+      {% endblock %}

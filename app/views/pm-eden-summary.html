@@ -1,0 +1,181 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Practice Manager Summary | External Reporting User Onboarding
+{% endblock %}
+
+{% block beforeContent %}
+
+{% endblock %}
+
+{% block content %}
+{% from 'back-link/macro.njk' import backLink %}
+
+<div class="nhsuk-back-link">
+    <a class="nhsuk-back-link__link nhsuk-u-margin-bottom-8" href="pm-eden-authorisation">
+      <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+        <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+      </svg>
+      Go back</a>
+  </div> 
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+      <header class="page-header">
+        <h1>Summary</h1>
+      </header>
+
+        <div class="nhsuk-inset-text">
+          <span class="nhsuk-u-visually-hidden">Information: </span>
+          <p><B>PLEASE NOTE:</B> This service is solely for testing and research purposes. The details below may not match those that were input.  
+          </a>
+        </p>
+        </div>
+
+        <h2 class="nhsuk-heading-l">Your details</h2>
+      <dl class="nhsuk-summary-list">
+
+  <div class="nhsuk-summary-list__row">
+    <dt class="nhsuk-summary-list__key">
+      Name
+    </dt>
+    <dd class="nhsuk-summary-list__value">
+      Karen Francis
+    </dd>
+
+    <dd class="nhsuk-summary-list__actions">
+
+      <a href="/your-details-eden">
+        Change<span class="nhsuk-u-visually-hidden"> name</span>
+      </a>
+
+    </dd>
+
+  </div>
+  
+  <div class="nhsuk-summary-list__row">
+    <dt class="nhsuk-summary-list__key">
+      Email address
+    </dt>
+    <dd class="nhsuk-summary-list__value">
+      <p>karen.francis@example.com</p>
+    </dd>
+
+    <dd class="nhsuk-summary-list__actions">
+
+      <a href="/your-details-eden">
+        Change<span class="nhsuk-u-visually-hidden"> contact details</span>
+      </a>
+
+    </dd>
+
+  </div>
+
+  <div class="nhsuk-summary-list__row">
+    <dt class="nhsuk-summary-list__key">
+      Job title
+    </dt>
+    <dd class="nhsuk-summary-list__value">
+      <p>Practice Manager</p>
+    </dd>
+
+    <dd class="nhsuk-summary-list__actions">
+
+      <a href="access-type-eden">
+        Change<span class="nhsuk-u-visually-hidden"> contact details</span>
+      </a>
+
+    </dd>
+
+  </div>
+
+</dl>
+
+      <h2 class="nhsuk-heading-l">Your organisation’s details</h2>
+      <dl class="nhsuk-summary-list">
+
+  <div class="nhsuk-summary-list__row">
+    <dt class="nhsuk-summary-list__key">
+      Practice Manager Type(s)
+    </dt>
+    <dd class="nhsuk-summary-list__value">
+      Practice Manager 1 (PM1), Practice Manager 2 (PM2), Practice Manager 3 (PM3)
+    </dd>
+
+    <dd class="nhsuk-summary-list__actions">
+
+      <a href="access-type-eden">
+        Change<span class="nhsuk-u-visually-hidden"> name</span>
+      </a>
+
+    </dd>
+
+  </div>
+
+  <div class="nhsuk-summary-list__row">
+    <dt class="nhsuk-summary-list__key">
+      Contract(s)
+    </dt>
+    <dd class="nhsuk-summary-list__value">
+      <p>Contract 1 (CNTRCT1), Contract 2 (CNTRCT2), Contract 3 (CNTRCT3)</p>
+    </dd>
+
+    <dd class="nhsuk-summary-list__actions">
+
+      <a href="pm-details-eden">
+        Change<span class="nhsuk-u-visually-hidden"> contact details</span>
+      </a>
+
+    </dd>
+
+  </div>
+
+</dl>
+
+<h2 class="nhsuk-heading-l">Authorisation</h2>
+      <dl class="nhsuk-summary-list">
+
+
+  <div class="nhsuk-summary-list__row">
+    <dt class="nhsuk-summary-list__key">
+      Authoriser name
+    </dt>
+    <dd class="nhsuk-summary-list__value">
+      <p>PM Approver</p>
+    </dd>
+
+    <dd class="nhsuk-summary-list__actions">
+
+      <a href="eops-authorisation">
+        Change<span class="nhsuk-u-visually-hidden"> contact details</span>
+      </a>
+
+    </dd>
+
+  </div>
+
+  <div class="nhsuk-summary-list__row">
+    <dt class="nhsuk-summary-list__key">
+      Authoriser email
+    </dt>
+    <dd class="nhsuk-summary-list__value">
+      <p>pmapprover@email.com</p>
+    </dd>
+
+    <dd class="nhsuk-summary-list__actions">
+
+      <a href="eops-authorisation">
+        Change<span class="nhsuk-u-visually-hidden"> contact details</span>
+      </a>
+
+    </dd>
+
+  </div>
+
+</dl>
+
+</div>
+</div><a class="nhsuk-button nhsuk-u-margin-bottom-8"
+    href="eden-complete">Submit</a> {% endblock %}
+</body>
+</html>

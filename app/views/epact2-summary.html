@@ -1,0 +1,257 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  ePact2 Summary | External Reporting User Onboarding
+{% endblock %}
+
+{% block beforeContent %}
+
+{% endblock %}
+
+{% block content %}
+{% from 'back-link/macro.njk' import backLink %}
+
+<div class="nhsuk-back-link">
+    <a class="nhsuk-back-link__link nhsuk-u-margin-bottom-8" href="epact2-authorisation">
+      <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+        <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+      </svg>
+      Go back</a>
+  </div> 
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+      <header class="page-header">
+        <h1>Summary</h1>
+      </header>
+
+        <div class="nhsuk-inset-text">
+          <span class="nhsuk-u-visually-hidden">Information: </span>
+          <p><B>PLEASE NOTE:</B> This service is solely for testing and research purposes. The details below may not match those that were input.  
+          </a>
+        </p>
+        </div>
+
+        <h2 class="nhsuk-heading-l">Your details</h2>
+      <dl class="nhsuk-summary-list">
+
+  <div class="nhsuk-summary-list__row">
+    <dt class="nhsuk-summary-list__key">
+      Name
+    </dt>
+    <dd class="nhsuk-summary-list__value">
+      Karen Francis
+    </dd>
+
+    <dd class="nhsuk-summary-list__actions">
+
+      <a href="/your-details-epact2">
+        Change<span class="nhsuk-u-visually-hidden"> name</span>
+      </a>
+
+    </dd>
+
+  </div>
+  
+  <div class="nhsuk-summary-list__row">
+    <dt class="nhsuk-summary-list__key">
+      Email address
+    </dt>
+    <dd class="nhsuk-summary-list__value">
+      <p>karen.francis@example.com</p>
+    </dd>
+
+    <dd class="nhsuk-summary-list__actions">
+
+      <a href="/your-details-epact2">
+        Change<span class="nhsuk-u-visually-hidden"> contact details</span>
+      </a>
+
+    </dd>
+
+  </div>
+
+  <div class="nhsuk-summary-list__row">
+    <dt class="nhsuk-summary-list__key">
+      Job title
+    </dt>
+    <dd class="nhsuk-summary-list__value">
+      <p>GP Practice Manager</p>
+    </dd>
+
+    <dd class="nhsuk-summary-list__actions">
+
+      <a href="/your-details-epact2">
+        Change<span class="nhsuk-u-visually-hidden"> contact details</span>
+      </a>
+
+    </dd>
+
+  </div>
+
+</dl>
+
+      <h2 class="nhsuk-heading-l">Your organisation's details</h2>
+      <dl class="nhsuk-summary-list">
+
+  <div class="nhsuk-summary-list__row">
+    <dt class="nhsuk-summary-list__key">
+      Organisation type
+    </dt>
+    <dd class="nhsuk-summary-list__value">
+      Academic Health Science Network (AHSN)
+    </dd>
+
+    <dd class="nhsuk-summary-list__actions">
+
+      <a href="organisation-type-epact2">
+        Change<span class="nhsuk-u-visually-hidden"> name</span>
+      </a>
+
+    </dd>
+
+  </div>
+
+  <div class="nhsuk-summary-list__row">
+    <dt class="nhsuk-summary-list__key">
+      Organisation(s) details
+    </dt>
+    <dd class="nhsuk-summary-list__value">
+      <p>Organisation 1, Organisation 2, Organisation 3</p>
+    </dd>
+
+    <dd class="nhsuk-summary-list__actions">
+
+      <a href="epact2-organisation-details">
+        Change<span class="nhsuk-u-visually-hidden"> contact details</span>
+      </a>
+
+    </dd>
+
+  </div>
+
+  <div class="nhsuk-summary-list__row">
+    <dt class="nhsuk-summary-list__key">
+      Organisation code(s)
+    </dt>
+    <dd class="nhsuk-summary-list__value">
+      <p>ORG1, ORG2, ORG3</p>
+    </dd>
+
+    <dd class="nhsuk-summary-list__actions">
+
+      <a href="epact2-organisation-details">
+        Change<span class="nhsuk-u-visually-hidden"> contact details</span>
+      </a>
+
+    </dd>
+
+  </div>
+
+</dl>
+
+<h2 class="nhsuk-heading-l">Access level</h2>
+<dl class="nhsuk-summary-list">
+
+<div class="nhsuk-summary-list__row">
+<dt class="nhsuk-summary-list__key">
+Organisation type
+</dt>
+<dd class="nhsuk-summary-list__value">
+Dummy Org 1, Dummy Org 2, Dummy Org 3
+</dd>
+
+<dd class="nhsuk-summary-list__actions">
+
+<a href="epact2-access-level">
+  Change<span class="nhsuk-u-visually-hidden"> name</span>
+</a>
+
+</dd>
+
+</div>
+
+<div class="nhsuk-summary-list__row">
+<dt class="nhsuk-summary-list__key">
+Organisation code
+</dt>
+<dd class="nhsuk-summary-list__value">
+<p>ORG1, ORG2, ORG3</p>
+</dd>
+
+<dd class="nhsuk-summary-list__actions">
+
+<a href="epact2-access-level">
+  Change<span class="nhsuk-u-visually-hidden"> contact details</span>
+</a>
+
+</dd>
+
+</div>
+
+<div class="nhsuk-summary-list__row">
+  <dt class="nhsuk-summary-list__key">
+  Access Level
+  </dt>
+  <dd class="nhsuk-summary-list__value">
+  <p>Level 1, Level 2, Level 3</p>
+  </dd>
+  
+  <dd class="nhsuk-summary-list__actions">
+  
+  <a href="epact2-access-level">
+    Change<span class="nhsuk-u-visually-hidden"> contact details</span>
+  </a>
+  
+  </dd>
+  
+  </div>
+
+</dl>
+
+<h2 class="nhsuk-heading-l">Authorisation</h2>
+<dl class="nhsuk-summary-list">
+
+
+<div class="nhsuk-summary-list__row">
+<dt class="nhsuk-summary-list__key">
+Authoriser name
+</dt>
+<dd class="nhsuk-summary-list__value">
+<p>ePact2 Approver</p>
+</dd>
+
+<dd class="nhsuk-summary-list__actions">
+
+<a href="epact2-authorisation">
+  Change<span class="nhsuk-u-visually-hidden"> contact details</span>
+</a>
+
+</dd>
+
+</div>
+
+<div class="nhsuk-summary-list__row">
+<dt class="nhsuk-summary-list__key">
+Authoriser email
+</dt>
+<dd class="nhsuk-summary-list__value">
+<p>epact2approver@email.com</p>
+</dd>
+
+<dd class="nhsuk-summary-list__actions">
+
+<a href="epact2-authorisation">
+  Change<span class="nhsuk-u-visually-hidden"> contact details</span>
+</a>
+
+</dd>
+
+</div>
+
+</dl>
+</div>
+</div><a class="nhsuk-button nhsuk-u-margin-bottom-8"
+    href="epact2-complete">Submit</a> {% endblock %}
+</body>
+</html>
